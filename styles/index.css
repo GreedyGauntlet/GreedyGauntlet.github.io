@@ -15,7 +15,6 @@ body {
     padding: 10px;
 }
 
-
 .logo{
     position: relative;
     transform-origin: top left; /* Set the transform origin to the center of the logo */
@@ -68,6 +67,33 @@ body {
     cursor: pointer;
     color: #9829d0;
     transition: 0.3s;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 4.5em;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    text-shadow: rgb(204, 255, 199) 0 0 4px;
+}
+
+.subsection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1.5em;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+}
+
+.subsection .info {
+    margin: 5em;
+    text-align: center;
+    width: 50vw;
 }
 
 
