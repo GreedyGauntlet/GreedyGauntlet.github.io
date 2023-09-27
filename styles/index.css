@@ -1,0 +1,103 @@
+body {
+    background-color: #010D11;
+    padding: 0;
+    margin: 0;
+}
+
+
+
+.palm {
+    width: 60px;
+    position: fixed;
+    left: 20px;
+    color: white;
+    font-size: 2em;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    
+}
+            /*clip-path: polygon(39% 67%, 54% 58%, 39% 67%, 24% 56%);
+            clip-path: polygon(39% 50%, 54% 58%, 39% 67%, 24% 56%);*/
+
+@keyframes logoAnimation{
+    0%{
+        transform: translateX(0);
+    }
+    26%{
+        transform: translateX(3px);
+    }
+    53%{
+        transform: translateX(-3px);
+    }
+    80%{
+        transform: translateX(0px);
+        clip-path: polygon(39% 50%, 54% 58%, 39% 67%, 24% 56%);
+    }
+    90%{
+        clip-path: polygon(39% 67%, 54% 58%, 39% 67%, 24% 56%);
+    }
+    100%{
+        clip-path: polygon(39% 50%, 54% 58%, 39% 67%, 24% 56%);
+    }
+}
+
+.logo{
+    width: 60px;
+    position: fixed;
+    left: 20px;
+    color: white;
+    font-size: 2em;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+
+}
+
+.container{
+    position: relative;
+    width: 60px;
+    height: 60px;
+    clip-path: polygon(39% 50%, 54% 58%, 39% 67%, 24% 56%);
+}
+
+.eye {
+    width: 100%; /* Make sure the image takes the full width of its parent */
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: clip-path 0.5s ease;
+}
+
+
+.logo:hover .eye{
+    animation: logoAnimation 5s ease;
+}
+
+
+
+
+.taskbar {
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 5em;
+    background-color: black;
+    box-shadow: rgba(101, 255, 101, 0.438) 0 0 80px;
+}
+
+.taskbar_btn {
+    color: white;
+    font-size: 1.5em;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    padding: 1em 1.5em 1em 1.5em;
+    transition: 0.5s;
+}
+
+.taskbar_btn:hover {
+    cursor: pointer;
+    color: #9829d0;
+    transition: 0.3s;
+}
