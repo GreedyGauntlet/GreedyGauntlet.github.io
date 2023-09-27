@@ -4,76 +4,44 @@ body {
     margin: 0;
 }
 
-
-
-.palm {
-    width: 60px;
-    position: fixed;
-    left: 20px;
-    color: white;
-    font-size: 2em;
-    font-family: 'Lato', sans-serif;
-    font-weight: 300;
-    
-}
-            /*clip-path: polygon(39% 67%, 54% 58%, 39% 67%, 24% 56%);
-            clip-path: polygon(39% 50%, 54% 58%, 39% 67%, 24% 56%);*/
-
-@keyframes logoAnimation{
-    0%{
-        transform: translateX(0);
-    }
-    26%{
-        transform: translateX(3px);
-    }
-    53%{
-        transform: translateX(-3px);
-    }
-    80%{
-        transform: translateX(0px);
-        clip-path: polygon(39% 50%, 54% 58%, 39% 67%, 24% 56%);
-    }
-    90%{
-        clip-path: polygon(39% 67%, 54% 58%, 39% 67%, 24% 56%);
-    }
-    100%{
-        clip-path: polygon(39% 50%, 54% 58%, 39% 67%, 24% 56%);
-    }
-}
-
-.logo{
-    width: 60px;
-    position: fixed;
-    left: 20px;
-    color: white;
-    font-size: 2em;
-    font-family: 'Lato', sans-serif;
-    font-weight: 300;
-
-}
-
-.container{
+.logo-container{
+    display: inline-block; /* Ensure that the container only takes the space it needs */
+    transition: transform 0.3s ease-in-out; /* Add a transition for smooth scaling */
     position: relative;
     width: 60px;
     height: 60px;
+    top: 0;
+    left: 0;
+    padding: 10px;
+}
+
+
+.logo{
+    position: relative;
+    transform-origin: top left; /* Set the transform origin to the center of the logo */
+}
+
+.palm {
+    position: absolute;
+} 
+
+.container{
+    position: absolute;
     clip-path: polygon(39% 50%, 54% 58%, 39% 67%, 24% 56%);
 }
 
 .eye {
     width: 100%; /* Make sure the image takes the full width of its parent */
-    position: absolute;
-    top: 0;
-    left: 0;
     transition: clip-path 0.5s ease;
 }
 
-
-.logo:hover .eye{
-    animation: logoAnimation 5s ease;
+.logo-container:hover{
+    transform:scale(1.1);
 }
 
-
-
+.logo:hover .eye{
+    animation: logoAnimation 3s ease;
+}
 
 .taskbar {
     position: fixed;
@@ -100,4 +68,27 @@ body {
     cursor: pointer;
     color: #9829d0;
     transition: 0.3s;
+}
+
+
+@keyframes logoAnimation{
+    0%{
+        transform: translateX(0);
+    }
+    26%{
+        transform: translateX(3px);
+    }
+    53%{
+        transform: translateX(-3px);
+    }
+    80%{
+        transform: translateX(0px);
+        clip-path: polygon(39% 50%, 54% 58%, 39% 67%, 24% 56%);
+    }
+    90%{
+        clip-path: polygon(39% 67%, 54% 58%, 39% 67%, 24% 56%);
+    }
+    100%{
+        clip-path: polygon(39% 50%, 54% 58%, 39% 67%, 24% 56%);
+    }
 }
