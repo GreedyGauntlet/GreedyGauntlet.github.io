@@ -1,5 +1,5 @@
 body {
-    background-color: #010D11;
+    background-color: #1f1f1f;
     padding: 0;
     margin: 0;
 }
@@ -13,8 +13,8 @@ body {
     top: 0;
     left: 0;
     padding: 10px;
+    
 }
-
 
 .logo{
     position: relative;
@@ -47,18 +47,18 @@ body {
     position: fixed;
     top: 0;
     display: flex;
-    justify-content: center;
+    justify-content: right;
     align-items: center;
     width: 100vw;
     height: 5em;
     background-color: black;
-    box-shadow: rgba(101, 255, 101, 0.438) 0 0 80px;
+    box-shadow: rgba(161, 161, 161, 0.438) 0 0 80px;
 }
 
 .taskbar_btn {
     color: white;
     font-size: 1.5em;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Bahnschrift SemiBold', sans-serif;
     font-weight: 300;
     padding: 1em 1.5em 1em 1.5em;
     transition: 0.5s;
@@ -68,6 +68,87 @@ body {
     cursor: pointer;
     color: #9829d0;
     transition: 0.3s;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 4.5em;
+    font-family: 'arial black', sans-serif;
+    font-weight: 300;
+}
+
+.subsection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1.5em;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+}
+
+.subsection .info {
+    margin: 5em;
+    text-align: center;
+    width: 50vw;
+}
+
+.ln1, .ln2, .ln3 {
+	width: 3em;
+	height: 0.3em;
+	background-color: #FFF;
+	margin: 0.45em 0;
+	transition: 0.4s;
+}
+
+.change .ln1 {
+	transform: translate(0, 0.75em) rotate(-45deg);
+}
+
+.change .ln2 {
+	opacity: 0;
+}
+
+.change .ln3 {
+	transform: translate(0, -0.65em) rotate(45deg);
+}
+
+.animatedico {
+    position: relative;
+    margin-right: 1em;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.sidenav {
+	height: 100%;
+	width: 0;
+	position: fixed;
+	z-index: 1;
+	top: 5em;
+	right: 0;
+	background-color: #FFFFFF;
+	overflow-x: hidden;
+	padding-top: 0px;
+	transition: 0.5s;
+}
+
+.sidenav a {
+	padding: 1em 1.5em 1em 1.5em;
+	text-decoration: none;
+	font-size: 25px;
+	color: #222222;
+	font-size: 1.2em;
+	display: block;
+	transition: 0.3s;
+    font-family: 'Bahnschrift SemiBold', sans-serif;
+}
+
+.sidenav a:hover {
+	background-color: #EEE;
 }
 
 
