@@ -57,7 +57,7 @@ body {
 .taskbar_btn {
     color: white;
     font-size: 1.5em;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Impact', sans-serif;
     font-weight: 300;
     padding: 1em 1.5em 1em 1.5em;
     transition: 0.5s;
@@ -75,7 +75,7 @@ body {
     align-items: center;
     color: white;
     font-size: 4.5em;
-    font-family: 'Lato', sans-serif;
+    font-family: 'arial black', sans-serif;
     font-weight: 300;
     text-shadow: rgb(204, 255, 199) 0 0 4px;
 }
