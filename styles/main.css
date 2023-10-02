@@ -2,12 +2,14 @@ body {
     background-color: #1f1f1f;
     padding: 0;
     margin: 0;
+    width: 100vw;
+    height: 100vh;
 }
 
 .logo-container{
     display: inline-block; /* Ensure that the container only takes the space it needs */
     transition: transform 0.3s ease-in-out; /* Add a transition for smooth scaling */
-    position: relative;
+    position: absolute;
     width: 60px;
     height: 60px;
     top: 0;
@@ -50,34 +52,21 @@ body {
     justify-content: right;
     align-items: center;
     width: 100vw;
-    height: 5em;
+    height: 10vh;
     background-color: black;
     box-shadow: rgba(161, 161, 161, 0.438) 0 0 80px;
 }
 
-.taskbar_btn {
-    color: white;
-    font-size: 1.5em;
-    font-family: 'Bahnschrift SemiBold', sans-serif;
-    font-weight: 300;
-    padding: 1em 1.5em 1em 1.5em;
-    transition: 0.5s;
-}
-
-.taskbar_btn:hover {
-    cursor: pointer;
-    color: #9829d0;
-    transition: 0.3s;
-}
 
 .header {
     display: flex;
     justify-content: center;
     align-items: center;
     color: white;
-    font-size: 4.5em;
+    font-size: 3.5em;
     font-family: 'arial black', sans-serif;
     font-weight: 300;
+    padding-top: 15vh;
 }
 
 .subsection {
@@ -91,9 +80,9 @@ body {
 }
 
 .subsection .info {
-    margin: 5em;
+    margin: 5vh;
     text-align: center;
-    width: 50vw;
+    width: 75vw;
 }
 
 .ln1, .ln2, .ln3 {
