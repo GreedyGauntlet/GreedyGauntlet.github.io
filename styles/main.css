@@ -102,7 +102,7 @@ body {
 }
 
 .change .ln1 {
-	transform: translate(0, 0.75em) rotate(-45deg);
+	transform: translate(0, 200%) rotate(-45deg);
 }
 
 .change .ln2 {
@@ -110,7 +110,7 @@ body {
 }
 
 .change .ln3 {
-	transform: translate(0, -0.65em) rotate(45deg);
+	transform: translate(0, -200%) rotate(45deg);
 }
 
 .animatedico {
