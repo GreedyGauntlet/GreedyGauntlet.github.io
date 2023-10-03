@@ -4,6 +4,8 @@ body {
     margin: 0;
     width: 100vw;
     height: 100vh;
+    overflow-x: hidden;
+    overflow-wrap:break-word;
 }
 
 .logo-container {
@@ -63,6 +65,16 @@ body {
     height: 10vh;
     background-color: black;
     box-shadow: rgba(161, 161, 161, 0.438) 0 0 80px;
+
+}
+
+.mainpage {
+    position:fixed;
+    padding-top: 15vh;
+    width: 75vw;
+    left: 12.5vw;
+    overflow-x: hidden;
+    overflow-wrap:break-word;
 }
 
 
@@ -74,7 +86,6 @@ body {
     font-size: 3.5em;
     font-family: 'arial black', sans-serif;
     font-weight: 300;
-    padding-top: 15vh;
 }
 
 .subsection {
@@ -89,8 +100,8 @@ body {
 
 .subsection .info {
     margin: 5vh;
-    text-align: center;
-    width: 75vw;
+    text-align: left;
+    
 }
 
 .ln1, .ln2, .ln3 {
@@ -119,8 +130,8 @@ body {
     cursor: pointer;
     top: 10%;
     right: 2%;
-    width: 8vh;
-    height: 8vh;
+    width: 5vh;
+    height: 5vh;
     padding: 0; /* Remove padding to prevent overflow */
     object-fit: contain;
     align-items: center;
@@ -138,6 +149,7 @@ body {
 	overflow-x: hidden;
 	padding-top: 0px;
 	transition: 0.5s;
+    overflow-wrap:normal;
 }
 
 .sidenav a {

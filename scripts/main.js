@@ -46,3 +46,4 @@ function openNav() {
 		navOpen = true;
 	}
 }
+
