@@ -6,36 +6,44 @@ body {
     height: 100vh;
 }
 
-.logo-container{
-    display: inline-block; /* Ensure that the container only takes the space it needs */
-    transition: transform 0.3s ease-in-out; /* Add a transition for smooth scaling */
+.logo-container {
     position: absolute;
-    width: 60px;
-    height: 60px;
-    top: 0;
-    left: 0;
-    padding: 10px;
-    
-}
-
-.logo{
+    top: 10%;
+    left: 1%;
+    transition: transform 0.3s ease-in-out, width 0.3s ease-in-out, height 0.3s ease-in-out;
+    width: 8vh;
+    height: 8vh;
+    padding: 0; /* Remove padding to prevent overflow */
+    object-fit: contain;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1; /* Ensure the logo is on top of other content */
+  }
+  
+  .logo {
     position: relative;
-    transform-origin: top left; /* Set the transform origin to the center of the logo */
-}
-
-.palm {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .palm {
     position: absolute;
-} 
-
-.container{
+    width: 100%;
+    height: 100%;
+  }
+  
+  .container {
     position: absolute;
     clip-path: polygon(39% 50%, 54% 58%, 39% 67%, 24% 56%);
-}
-
-.eye {
-    width: 100%; /* Make sure the image takes the full width of its parent */
+    width: 100%;
+    height: 100%;
+  }
+  
+  .eye {
+    width: 100%;
     transition: clip-path 0.5s ease;
-}
+  }
 
 .logo-container:hover{
     transform:scale(1.1);
@@ -86,10 +94,10 @@ body {
 }
 
 .ln1, .ln2, .ln3 {
-	width: 3em;
-	height: 0.3em;
+	width: 100%;
+	height: 10%;
 	background-color: #FFF;
-	margin: 0.45em 0;
+	margin: 12% 0;
 	transition: 0.4s;
 }
 
@@ -107,9 +115,16 @@ body {
 
 .animatedico {
     position: relative;
-    margin-right: 1em;
     display: inline-block;
     cursor: pointer;
+    top: 10%;
+    right: 2%;
+    width: 8vh;
+    height: 8vh;
+    padding: 0; /* Remove padding to prevent overflow */
+    object-fit: contain;
+    align-items: center;
+    justify-content: center;
 }
 
 .sidenav {
@@ -117,7 +132,7 @@ body {
 	width: 0;
 	position: fixed;
 	z-index: 1;
-	top: 5em;
+	top: 10vh;
 	right: 0;
 	background-color: #FFFFFF;
 	overflow-x: hidden;
