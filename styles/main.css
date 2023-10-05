@@ -66,10 +66,14 @@ body {
     background-color: black;
     box-shadow: rgba(161, 161, 161, 0.438) 0 0 80px;
     z-index: 1;
+    transition: opacity 0.3s ease;
+    opacity: 1;
 
 }
 
+
 .mainpage {
+  top: 10vh;
     position:relative;
     width: 75vw;
     left: 12.5vw;

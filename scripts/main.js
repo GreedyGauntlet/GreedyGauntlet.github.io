@@ -66,3 +66,38 @@ function showSlides() {
   dots[slideIndex-1].className += " active";
   setTimeout(showSlides, 2000); // Change image every 2 seconds
 }
+
+const minOpacity = 0.5;
+
+let header = document.querySelector(".taskbar"); // Select the .taskbar element
+
+// Function to handle scrolling and opacity change
+function handleScroll() {
+  if (!navOpen) {
+    let scrollTop = window.scrollY || document.documentElement.scrollTop;
+    let opacity = 1 - scrollTop / 500;
+
+    // Ensure opacity stays within the range [0, 1]
+    opacity = Math.min(1, Math.max(minOpacity, opacity));
+
+    // Set the opacity of the taskbar
+    header.style.opacity = opacity;
+  }
+}
+
+// Add a scroll event listener to handle scrolling
+window.addEventListener("scroll", handleScroll);
+
+// Add a hover event listener to restore full opacity on hover
+header.addEventListener("mouseenter", function () {
+  if (!navOpen) {
+    header.style.opacity = 1;
+  }
+});
+
+// Add a mouseleave event listener to reset opacity after hover
+header.addEventListener("mouseleave", function () {
+  if (!navOpen) {
+    handleScroll(); // Call handleScroll to restore fading effect
+  }
+});
