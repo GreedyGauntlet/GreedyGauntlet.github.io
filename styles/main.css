@@ -171,7 +171,7 @@ img {vertical-align: middle;}
 }
 
 .subsection {
-    display: flex;
+    display: block;
     justify-content: center;
     align-items: center;
     color: white;
@@ -182,7 +182,7 @@ img {vertical-align: middle;}
 
 .subsection .info {
     margin: 5vh;
-    text-align: left;
+    text-align: center;
     
 }
 
